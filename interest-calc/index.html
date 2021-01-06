@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Interest Rate Calculator</title>
+</head>
+
+<body>
+    <div id="loancal">
+        <h1>Interest Rate Calculator</h1>
+        <p>Principal Amount (P): $<input id="p_amount" type="number" onchange="compute()"></p>
+        <p>Interest Rate (i): %<input id="i_rate" min="0" max="100" value="10" step=".1" onchange="compute()"></p>
+        <p>Time in years (t): <input id="time" type="number" min="1" max="100" value="1" step="1" onchange="compute()"></p>
+        <h2 id="payment"></h2>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+
