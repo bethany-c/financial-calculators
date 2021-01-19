@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +10,12 @@
 <body>
     <div id="loancal">
         <h1>Interest Rate Calculator</h1>
-        <p>Principal Amount (P): $<input id="p_amount" type="number" onchange="compute()"></p>
-        <p>Interest Rate (i): %<input id="i_rate" min="0" max="100" value="10" step=".1" onchange="compute()"></p>
-        <p>Time in years (t): <input id="time" type="number" min="1" max="100" value="1" step="1" onchange="compute()"></p>
-        <h2 id="payment"></h2>
+        <p>Principal Amount (P): $ <input id="p_amount" type="number"></p>
+        <p>Interest Rate (i): % <input id="i_rate" min="0" max="100" value="10" step=".1"></p>
+        <p>Time in years (t): <input id="time" type="number" min="1" max="100" value="1" step="1"></p>
+        <button onclick="get_amount()">Calculate</button>
+        <br>
+        <p id="result"></p>
     </div>
     <script src="calculator.js"></script>
 </body>
@@ -23,4 +23,3 @@
 
 <!doctype html>
 <html lang="en">
-
